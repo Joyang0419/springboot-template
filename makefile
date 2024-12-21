@@ -12,5 +12,6 @@ mvn-clean:
 mvn-package:
 	mvn clean package
 
+# 示範怎麼吃到config(這樣給人家jar檔案就好)
 run-jar:
-	java -jar target/web.jar
+	java -jar target/web.jar --spring.config.location=file:./src/main/resource/application.yml
